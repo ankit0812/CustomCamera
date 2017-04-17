@@ -1,0 +1,911 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13FD4829C1935D33FF0B0E858B84482D /* FSVideoCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4762C86774178F707DCE9F3ABA2DFDF5 /* FSVideoCameraView.xib */; };
+		152E6DC19E35A09235B7A3E748FE39D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		1C82A350630273F914125DBDEA52F683 /* FSAlbumView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D85845D4FCEF0FBFACBA02ED26D78942 /* FSAlbumView.xib */; };
+		22A3A7C157E7BD0257AF50C836D980F2 /* Pods-CustomCameraUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9556BCDAE02CD59D1E17FC261BC5303 /* Pods-CustomCameraUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		337EBB7E279C5D1697601D3C6A696A46 /* FusumaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6868F65959F4ECC606C4AA1D8BAA253B /* FusumaViewController.swift */; };
+		37D4EF5938F8495CE32638F8BEB53550 /* FSAlbumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE3667932A9C65A8CB78A2C09DA7AB /* FSAlbumViewCell.swift */; };
+		4563C2F23DE81AECED2DC055369C259F /* Pods-CustomCameraUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E55D656E5937B2416BF2C4FF0DF0E55 /* Pods-CustomCameraUITests-dummy.m */; };
+		484B8C39828B296D71146C51A0904FC7 /* Fusuma-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAE18599124DC703CCBF6577DE56716 /* Fusuma-dummy.m */; };
+		527C4A0B8B61880EB2E5D3D955B29566 /* Pods-CustomCameraTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7895CBC5B61E0B9168BC2D99FB48E594 /* Pods-CustomCameraTests-dummy.m */; };
+		54615AB583CBEE1351D1B0429308701E /* Pods-CustomCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80990A5CAF2E241101E66EC627804884 /* Pods-CustomCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5876F184D9754E4DFBAD67EEF32FCF9C /* FSVideoCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C5C315C9F67A7A273F94BB4035A30 /* FSVideoCameraView.swift */; };
+		74DF795E65F4F08122344F7544A268F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		76C218BD1C4FED73A5D8DE0B44133A10 /* FSImageCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B443A557971434C990E65B8A5AC33 /* FSImageCropView.swift */; };
+		822D2761A871E7A585F8C57B63EB4C1F /* Pods-CustomCameraTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FE172B9DE40FA6AEB73F22B5E201948 /* Pods-CustomCameraTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97D850D3836A89967D5A350E84996568 /* FSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B749E25F5D04FB453503A7AB07DF99 /* FSConstants.swift */; };
+		98C0F05CF40E7E1C111B0599ABE5BCAD /* FSAlbumViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9E400F4EBB40F53F48F01359FD2AAD /* FSAlbumViewCell.xib */; };
+		9B873508C82CD5F231473F335E456221 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		AA87C8542F368CC301BCF815CACF5850 /* Fusuma-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C76C199A1A5705200C941C67310AF5E0 /* Fusuma-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE79998B4575961E735C7B038EBFB2B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		B17C799F02A5F3A48E61C7E4A6BD447B /* Pods-CustomCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6289ED2FDC0C076985A45206A6278C /* Pods-CustomCamera-dummy.m */; };
+		C5C88F4AB62FA845795ACAE292A05E5B /* FusumaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB54CCB79E3F33C1BEE9C023741D3B8F /* FusumaViewController.xib */; };
+		DC8B2CD64AE5925518C1FD441C723E77 /* FSAlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD716438461F9C44A473E55C1BA39E /* FSAlbumView.swift */; };
+		E76B14332EA4BF464EBA72C31769A619 /* FSCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABF778C0F45E2022CBE3AA9BFF36176C /* FSCameraView.xib */; };
+		E8CD91CC081DE8166DB3964B70DD91F3 /* FSCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DFC44AFE195F73155317D6DF9A1AB4 /* FSCameraView.swift */; };
+		F8F2B8EF3A92B1E031FA17F874B40D98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427FDC4E6130005591A94B287587AC3B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		247FF9AC5AFA1CF32DE6EC74AF96B426 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E0D8640A124012AB6F0A9F775A38285;
+			remoteInfo = Fusuma;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		032850E57A783FE9F4C329B67C8E0EF3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E55D656E5937B2416BF2C4FF0DF0E55 /* Pods-CustomCameraUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CustomCameraUITests-dummy.m"; sourceTree = "<group>"; };
+		0F52A2DF7120A2290F8596004BD50C08 /* Pods-CustomCameraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomCameraTests.release.xcconfig"; sourceTree = "<group>"; };
+		10B2785DF12F492E3B3A49827749F69E /* Pods-CustomCamera-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CustomCamera-frameworks.sh"; sourceTree = "<group>"; };
+		196A54CDD20439D699F2129E249FF31C /* Pods-CustomCameraUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CustomCameraUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		199C7D0A98A553CBFEE05822E3DBF1B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B1B8864D16766630565A6AAA5CCCF46 /* Pods-CustomCamera-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CustomCamera-resources.sh"; sourceTree = "<group>"; };
+		2F9E400F4EBB40F53F48F01359FD2AAD /* FSAlbumViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FSAlbumViewCell.xib; path = Sources/FSAlbumViewCell.xib; sourceTree = "<group>"; };
+		30FB67350970D8CACF4DFA0249E72549 /* Pods-CustomCamera-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CustomCamera-acknowledgements.plist"; sourceTree = "<group>"; };
+		427FDC4E6130005591A94B287587AC3B /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sources/Assets.xcassets; sourceTree = "<group>"; };
+		44CE3667932A9C65A8CB78A2C09DA7AB /* FSAlbumViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSAlbumViewCell.swift; path = Sources/FSAlbumViewCell.swift; sourceTree = "<group>"; };
+		4762C86774178F707DCE9F3ABA2DFDF5 /* FSVideoCameraView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FSVideoCameraView.xib; path = Sources/FSVideoCameraView.xib; sourceTree = "<group>"; };
+		4CA2A3ED227A97F5B8B356B6311D3BE3 /* Pods-CustomCameraTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CustomCameraTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		614C5C315C9F67A7A273F94BB4035A30 /* FSVideoCameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSVideoCameraView.swift; path = Sources/FSVideoCameraView.swift; sourceTree = "<group>"; };
+		65FBA5042CBE2D7ABD2F82A46C49171F /* Pods-CustomCameraUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CustomCameraUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6868F65959F4ECC606C4AA1D8BAA253B /* FusumaViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FusumaViewController.swift; path = Sources/FusumaViewController.swift; sourceTree = "<group>"; };
+		6BA0A2A37E72531DE5E260493E392E84 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F1B443A557971434C990E65B8A5AC33 /* FSImageCropView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSImageCropView.swift; path = Sources/FSImageCropView.swift; sourceTree = "<group>"; };
+		722B0376C34DB387494B96641AF8F31F /* Pods-CustomCameraTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CustomCameraTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7253081D10D3D5883751DA0068EEE493 /* Fusuma.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Fusuma.xcconfig; sourceTree = "<group>"; };
+		7791E61E4C8DDAD41FF89B0D809D7024 /* Pods-CustomCameraTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CustomCameraTests.modulemap"; sourceTree = "<group>"; };
+		7895CBC5B61E0B9168BC2D99FB48E594 /* Pods-CustomCameraTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CustomCameraTests-dummy.m"; sourceTree = "<group>"; };
+		79DFC44AFE195F73155317D6DF9A1AB4 /* FSCameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSCameraView.swift; path = Sources/FSCameraView.swift; sourceTree = "<group>"; };
+		80990A5CAF2E241101E66EC627804884 /* Pods-CustomCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CustomCamera-umbrella.h"; sourceTree = "<group>"; };
+		880462C4469C5FBBAC471B1F8CAF9936 /* Pods-CustomCameraUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CustomCameraUITests.modulemap"; sourceTree = "<group>"; };
+		8FE172B9DE40FA6AEB73F22B5E201948 /* Pods-CustomCameraTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CustomCameraTests-umbrella.h"; sourceTree = "<group>"; };
+		9208ED24741A17A35D7021004ADFC892 /* Pods-CustomCamera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CustomCamera.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1493B685D35F4F4F25AD8EDCE896604 /* Pods-CustomCameraUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CustomCameraUITests-resources.sh"; sourceTree = "<group>"; };
+		A20994A5E6EE4A11006C9842FFAE1A47 /* Pods-CustomCameraTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CustomCameraTests-resources.sh"; sourceTree = "<group>"; };
+		A2BF07432A167300220D1BB9EE7584E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8BD716438461F9C44A473E55C1BA39E /* FSAlbumView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSAlbumView.swift; path = Sources/FSAlbumView.swift; sourceTree = "<group>"; };
+		AA9AF7629A28B41DB2ED2FB939AE6E95 /* Pods_CustomCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CustomCamera.framework; path = "Pods-CustomCamera.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAFAF3CB8C917E41585631BA402EC263 /* Pods-CustomCameraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomCameraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB54CCB79E3F33C1BEE9C023741D3B8F /* FusumaViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FusumaViewController.xib; path = Sources/FusumaViewController.xib; sourceTree = "<group>"; };
+		ABF778C0F45E2022CBE3AA9BFF36176C /* FSCameraView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FSCameraView.xib; path = Sources/FSCameraView.xib; sourceTree = "<group>"; };
+		AC6289ED2FDC0C076985A45206A6278C /* Pods-CustomCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CustomCamera-dummy.m"; sourceTree = "<group>"; };
+		B4B749E25F5D04FB453503A7AB07DF99 /* FSConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSConstants.swift; path = Sources/FSConstants.swift; sourceTree = "<group>"; };
+		B9556BCDAE02CD59D1E17FC261BC5303 /* Pods-CustomCameraUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CustomCameraUITests-umbrella.h"; sourceTree = "<group>"; };
+		BA008F1C007E8807FF64BFC1362A4D6B /* Fusuma.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Fusuma.modulemap; sourceTree = "<group>"; };
+		C4C676C3D4BDEEF6F8A47A23808E6312 /* Pods-CustomCameraUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CustomCameraUITests-frameworks.sh"; sourceTree = "<group>"; };
+		C76C199A1A5705200C941C67310AF5E0 /* Fusuma-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Fusuma-umbrella.h"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D4704B0BD9FE02CE71C0927E0F9BB4F4 /* Pods-CustomCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomCamera.debug.xcconfig"; sourceTree = "<group>"; };
+		D85845D4FCEF0FBFACBA02ED26D78942 /* FSAlbumView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FSAlbumView.xib; path = Sources/FSAlbumView.xib; sourceTree = "<group>"; };
+		DC3E654040BCBB8A6562E5B3256C4758 /* Pods_CustomCameraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CustomCameraTests.framework; path = "Pods-CustomCameraTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E398280233E975E275DB3CBEFF6976C3 /* Pods_CustomCameraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CustomCameraUITests.framework; path = "Pods-CustomCameraUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3B0B5DF3D985E6C67DAB21A0285C521 /* Pods-CustomCamera-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CustomCamera-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E73015086C5F6EA370716DC2FD818FD0 /* Pods-CustomCameraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomCameraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E84AA38463389BED0C746AF77B0DBCB8 /* Pods-CustomCameraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomCameraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F1CF203545FCFE21049A962FA962AE5F /* Pods-CustomCameraTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CustomCameraTests-frameworks.sh"; sourceTree = "<group>"; };
+		F266AEE94A4E384FC4B5B43DD13684EB /* Pods-CustomCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomCamera.release.xcconfig"; sourceTree = "<group>"; };
+		F5E36BDF310760D1E6624D1ADCA87583 /* Fusuma-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Fusuma-prefix.pch"; sourceTree = "<group>"; };
+		FC13743697C66A5D74A352AE8377FF6A /* Fusuma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Fusuma.framework; path = Fusuma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFAE18599124DC703CCBF6577DE56716 /* Fusuma-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Fusuma-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AE351191916FA0F22C6211DA8AA2586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE79998B4575961E735C7B038EBFB2B7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29F313F534667FEBF0DBCA8249ECE23D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74DF795E65F4F08122344F7544A268F6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		332AD6CBCD0253B6CE91DF555781F789 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B873508C82CD5F231473F335E456221 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA9E43158E5F2A38893D826ED35CA7EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				152E6DC19E35A09235B7A3E748FE39D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		115DD318DB0B094AA68502D7CDFB0760 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC13743697C66A5D74A352AE8377FF6A /* Fusuma.framework */,
+				AA9AF7629A28B41DB2ED2FB939AE6E95 /* Pods_CustomCamera.framework */,
+				DC3E654040BCBB8A6562E5B3256C4758 /* Pods_CustomCameraTests.framework */,
+				E398280233E975E275DB3CBEFF6976C3 /* Pods_CustomCameraUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		634FD04952328062E50B021EEF2418AD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA008F1C007E8807FF64BFC1362A4D6B /* Fusuma.modulemap */,
+				7253081D10D3D5883751DA0068EEE493 /* Fusuma.xcconfig */,
+				FFAE18599124DC703CCBF6577DE56716 /* Fusuma-dummy.m */,
+				F5E36BDF310760D1E6624D1ADCA87583 /* Fusuma-prefix.pch */,
+				C76C199A1A5705200C941C67310AF5E0 /* Fusuma-umbrella.h */,
+				A2BF07432A167300220D1BB9EE7584E5 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Fusuma";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				A62EE4F72D50D6A341782D3EC05C8D3D /* Pods */,
+				115DD318DB0B094AA68502D7CDFB0760 /* Products */,
+				BF4ACADCE2F4DA22A74FE8035CC98482 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		81F58A39802F42FC25D1BA0AF44E74DA /* Pods-CustomCameraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				199C7D0A98A553CBFEE05822E3DBF1B7 /* Info.plist */,
+				880462C4469C5FBBAC471B1F8CAF9936 /* Pods-CustomCameraUITests.modulemap */,
+				65FBA5042CBE2D7ABD2F82A46C49171F /* Pods-CustomCameraUITests-acknowledgements.markdown */,
+				196A54CDD20439D699F2129E249FF31C /* Pods-CustomCameraUITests-acknowledgements.plist */,
+				0E55D656E5937B2416BF2C4FF0DF0E55 /* Pods-CustomCameraUITests-dummy.m */,
+				C4C676C3D4BDEEF6F8A47A23808E6312 /* Pods-CustomCameraUITests-frameworks.sh */,
+				A1493B685D35F4F4F25AD8EDCE896604 /* Pods-CustomCameraUITests-resources.sh */,
+				B9556BCDAE02CD59D1E17FC261BC5303 /* Pods-CustomCameraUITests-umbrella.h */,
+				E73015086C5F6EA370716DC2FD818FD0 /* Pods-CustomCameraUITests.debug.xcconfig */,
+				E84AA38463389BED0C746AF77B0DBCB8 /* Pods-CustomCameraUITests.release.xcconfig */,
+			);
+			name = "Pods-CustomCameraUITests";
+			path = "Target Support Files/Pods-CustomCameraUITests";
+			sourceTree = "<group>";
+		};
+		997FD9578DEB6F3AEBB0D2F43C5E1269 /* Fusuma */ = {
+			isa = PBXGroup;
+			children = (
+				A8BD716438461F9C44A473E55C1BA39E /* FSAlbumView.swift */,
+				44CE3667932A9C65A8CB78A2C09DA7AB /* FSAlbumViewCell.swift */,
+				79DFC44AFE195F73155317D6DF9A1AB4 /* FSCameraView.swift */,
+				B4B749E25F5D04FB453503A7AB07DF99 /* FSConstants.swift */,
+				6F1B443A557971434C990E65B8A5AC33 /* FSImageCropView.swift */,
+				614C5C315C9F67A7A273F94BB4035A30 /* FSVideoCameraView.swift */,
+				6868F65959F4ECC606C4AA1D8BAA253B /* FusumaViewController.swift */,
+				D3DC395A4647C206EF0800F672222A2C /* Resources */,
+				634FD04952328062E50B021EEF2418AD /* Support Files */,
+			);
+			name = Fusuma;
+			path = Fusuma;
+			sourceTree = "<group>";
+		};
+		A62EE4F72D50D6A341782D3EC05C8D3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				997FD9578DEB6F3AEBB0D2F43C5E1269 /* Fusuma */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B712BDC7731167B8B3E7FB21D9FC0BAD /* Pods-CustomCameraTests */ = {
+			isa = PBXGroup;
+			children = (
+				032850E57A783FE9F4C329B67C8E0EF3 /* Info.plist */,
+				7791E61E4C8DDAD41FF89B0D809D7024 /* Pods-CustomCameraTests.modulemap */,
+				722B0376C34DB387494B96641AF8F31F /* Pods-CustomCameraTests-acknowledgements.markdown */,
+				4CA2A3ED227A97F5B8B356B6311D3BE3 /* Pods-CustomCameraTests-acknowledgements.plist */,
+				7895CBC5B61E0B9168BC2D99FB48E594 /* Pods-CustomCameraTests-dummy.m */,
+				F1CF203545FCFE21049A962FA962AE5F /* Pods-CustomCameraTests-frameworks.sh */,
+				A20994A5E6EE4A11006C9842FFAE1A47 /* Pods-CustomCameraTests-resources.sh */,
+				8FE172B9DE40FA6AEB73F22B5E201948 /* Pods-CustomCameraTests-umbrella.h */,
+				AAFAF3CB8C917E41585631BA402EC263 /* Pods-CustomCameraTests.debug.xcconfig */,
+				0F52A2DF7120A2290F8596004BD50C08 /* Pods-CustomCameraTests.release.xcconfig */,
+			);
+			name = "Pods-CustomCameraTests";
+			path = "Target Support Files/Pods-CustomCameraTests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF4ACADCE2F4DA22A74FE8035CC98482 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D90C8E6F769CA646C135CF431B423533 /* Pods-CustomCamera */,
+				B712BDC7731167B8B3E7FB21D9FC0BAD /* Pods-CustomCameraTests */,
+				81F58A39802F42FC25D1BA0AF44E74DA /* Pods-CustomCameraUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D3DC395A4647C206EF0800F672222A2C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				427FDC4E6130005591A94B287587AC3B /* Assets.xcassets */,
+				D85845D4FCEF0FBFACBA02ED26D78942 /* FSAlbumView.xib */,
+				2F9E400F4EBB40F53F48F01359FD2AAD /* FSAlbumViewCell.xib */,
+				ABF778C0F45E2022CBE3AA9BFF36176C /* FSCameraView.xib */,
+				4762C86774178F707DCE9F3ABA2DFDF5 /* FSVideoCameraView.xib */,
+				AB54CCB79E3F33C1BEE9C023741D3B8F /* FusumaViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D90C8E6F769CA646C135CF431B423533 /* Pods-CustomCamera */ = {
+			isa = PBXGroup;
+			children = (
+				6BA0A2A37E72531DE5E260493E392E84 /* Info.plist */,
+				9208ED24741A17A35D7021004ADFC892 /* Pods-CustomCamera.modulemap */,
+				E3B0B5DF3D985E6C67DAB21A0285C521 /* Pods-CustomCamera-acknowledgements.markdown */,
+				30FB67350970D8CACF4DFA0249E72549 /* Pods-CustomCamera-acknowledgements.plist */,
+				AC6289ED2FDC0C076985A45206A6278C /* Pods-CustomCamera-dummy.m */,
+				10B2785DF12F492E3B3A49827749F69E /* Pods-CustomCamera-frameworks.sh */,
+				1B1B8864D16766630565A6AAA5CCCF46 /* Pods-CustomCamera-resources.sh */,
+				80990A5CAF2E241101E66EC627804884 /* Pods-CustomCamera-umbrella.h */,
+				D4704B0BD9FE02CE71C0927E0F9BB4F4 /* Pods-CustomCamera.debug.xcconfig */,
+				F266AEE94A4E384FC4B5B43DD13684EB /* Pods-CustomCamera.release.xcconfig */,
+			);
+			name = "Pods-CustomCamera";
+			path = "Target Support Files/Pods-CustomCamera";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7158FEC466025B95E36CEACB736FF70B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA87C8542F368CC301BCF815CACF5850 /* Fusuma-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D0601B4D56DA580C4EE5C243E4C9568 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54615AB583CBEE1351D1B0429308701E /* Pods-CustomCamera-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97BFF1CE66A3FFAFAC6DFCFFC36036C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822D2761A871E7A585F8C57B63EB4C1F /* Pods-CustomCameraTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2490ECA2A42197802C4832DCBBD784E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A3A7C157E7BD0257AF50C836D980F2 /* Pods-CustomCameraUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3E0D8640A124012AB6F0A9F775A38285 /* Fusuma */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 701EE424EC02B83CAB3D7F07E65B18F3 /* Build configuration list for PBXNativeTarget "Fusuma" */;
+			buildPhases = (
+				7586AED8D8B6EDCD6A3843D1E241C0B8 /* Sources */,
+				332AD6CBCD0253B6CE91DF555781F789 /* Frameworks */,
+				30B65FFC8989F13FD23CDB867580F8C9 /* Resources */,
+				7158FEC466025B95E36CEACB736FF70B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fusuma;
+			productName = Fusuma;
+			productReference = FC13743697C66A5D74A352AE8377FF6A /* Fusuma.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		54D877A5F196E39FCEE7E50D5B62883E /* Pods-CustomCameraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C24693D24506F6FEBA50394839447F5C /* Build configuration list for PBXNativeTarget "Pods-CustomCameraUITests" */;
+			buildPhases = (
+				BDBF48A29D66562F6ED98D56354955F0 /* Sources */,
+				1AE351191916FA0F22C6211DA8AA2586 /* Frameworks */,
+				D2490ECA2A42197802C4832DCBBD784E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CustomCameraUITests";
+			productName = "Pods-CustomCameraUITests";
+			productReference = E398280233E975E275DB3CBEFF6976C3 /* Pods_CustomCameraUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8867022DBD2E86234E1CFD1FD779A15A /* Pods-CustomCameraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCEA460EC64450E8030473B29C283047 /* Build configuration list for PBXNativeTarget "Pods-CustomCameraTests" */;
+			buildPhases = (
+				4947BB388AC28A958D96203CA0E752AA /* Sources */,
+				29F313F534667FEBF0DBCA8249ECE23D /* Frameworks */,
+				97BFF1CE66A3FFAFAC6DFCFFC36036C7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CustomCameraTests";
+			productName = "Pods-CustomCameraTests";
+			productReference = DC3E654040BCBB8A6562E5B3256C4758 /* Pods_CustomCameraTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E7E246AEC5E77DADD48D6876B9BD7AE1 /* Pods-CustomCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A28629F5C4F4B72465824A98981E1D99 /* Build configuration list for PBXNativeTarget "Pods-CustomCamera" */;
+			buildPhases = (
+				E72DEB225882564D9150B41204AB512E /* Sources */,
+				AA9E43158E5F2A38893D826ED35CA7EE /* Frameworks */,
+				8D0601B4D56DA580C4EE5C243E4C9568 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				922FD260C16F67F6BFBF65D18411737E /* PBXTargetDependency */,
+			);
+			name = "Pods-CustomCamera";
+			productName = "Pods-CustomCamera";
+			productReference = AA9AF7629A28B41DB2ED2FB939AE6E95 /* Pods_CustomCamera.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 115DD318DB0B094AA68502D7CDFB0760 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E0D8640A124012AB6F0A9F775A38285 /* Fusuma */,
+				E7E246AEC5E77DADD48D6876B9BD7AE1 /* Pods-CustomCamera */,
+				8867022DBD2E86234E1CFD1FD779A15A /* Pods-CustomCameraTests */,
+				54D877A5F196E39FCEE7E50D5B62883E /* Pods-CustomCameraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30B65FFC8989F13FD23CDB867580F8C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8F2B8EF3A92B1E031FA17F874B40D98 /* Assets.xcassets in Resources */,
+				1C82A350630273F914125DBDEA52F683 /* FSAlbumView.xib in Resources */,
+				98C0F05CF40E7E1C111B0599ABE5BCAD /* FSAlbumViewCell.xib in Resources */,
+				E76B14332EA4BF464EBA72C31769A619 /* FSCameraView.xib in Resources */,
+				13FD4829C1935D33FF0B0E858B84482D /* FSVideoCameraView.xib in Resources */,
+				C5C88F4AB62FA845795ACAE292A05E5B /* FusumaViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4947BB388AC28A958D96203CA0E752AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527C4A0B8B61880EB2E5D3D955B29566 /* Pods-CustomCameraTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7586AED8D8B6EDCD6A3843D1E241C0B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8B2CD64AE5925518C1FD441C723E77 /* FSAlbumView.swift in Sources */,
+				37D4EF5938F8495CE32638F8BEB53550 /* FSAlbumViewCell.swift in Sources */,
+				E8CD91CC081DE8166DB3964B70DD91F3 /* FSCameraView.swift in Sources */,
+				97D850D3836A89967D5A350E84996568 /* FSConstants.swift in Sources */,
+				76C218BD1C4FED73A5D8DE0B44133A10 /* FSImageCropView.swift in Sources */,
+				5876F184D9754E4DFBAD67EEF32FCF9C /* FSVideoCameraView.swift in Sources */,
+				484B8C39828B296D71146C51A0904FC7 /* Fusuma-dummy.m in Sources */,
+				337EBB7E279C5D1697601D3C6A696A46 /* FusumaViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDBF48A29D66562F6ED98D56354955F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4563C2F23DE81AECED2DC055369C259F /* Pods-CustomCameraUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E72DEB225882564D9150B41204AB512E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17C799F02A5F3A48E61C7E4A6BD447B /* Pods-CustomCamera-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		922FD260C16F67F6BFBF65D18411737E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Fusuma;
+			target = 3E0D8640A124012AB6F0A9F775A38285 /* Fusuma */;
+			targetProxy = 247FF9AC5AFA1CF32DE6EC74AF96B426 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12A9E50A0BEC96DAB13E6F562419A746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4704B0BD9FE02CE71C0927E0F9BB4F4 /* Pods-CustomCamera.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CustomCamera/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CustomCamera/Pods-CustomCamera.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CustomCamera;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3669481C4E1CA99738D6D3D906F63C44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E84AA38463389BED0C746AF77B0DBCB8 /* Pods-CustomCameraUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CustomCameraUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CustomCameraUITests/Pods-CustomCameraUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CustomCameraUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		40607FA92E2C791D7A3FA66F8D50A63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7253081D10D3D5883751DA0068EEE493 /* Fusuma.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Fusuma/Fusuma-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Fusuma/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Fusuma/Fusuma.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Fusuma;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		75B46EAA6283FFCC5C4586D90D5B4644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7253081D10D3D5883751DA0068EEE493 /* Fusuma.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Fusuma/Fusuma-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Fusuma/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Fusuma/Fusuma.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Fusuma;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		881B378F3229217FCCEA1691D49AD304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F52A2DF7120A2290F8596004BD50C08 /* Pods-CustomCameraTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CustomCameraTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CustomCameraTests/Pods-CustomCameraTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CustomCameraTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAEE0BDAF3102380D30EDA5DEA63AE5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E73015086C5F6EA370716DC2FD818FD0 /* Pods-CustomCameraUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CustomCameraUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CustomCameraUITests/Pods-CustomCameraUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CustomCameraUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E94273E3C5FCC081248159094B13A0B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAFAF3CB8C917E41585631BA402EC263 /* Pods-CustomCameraTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CustomCameraTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CustomCameraTests/Pods-CustomCameraTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CustomCameraTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EDB1DB0F43161CCAE4346B4F20CB6D91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F266AEE94A4E384FC4B5B43DD13684EB /* Pods-CustomCamera.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CustomCamera/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CustomCamera/Pods-CustomCamera.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CustomCamera;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		701EE424EC02B83CAB3D7F07E65B18F3 /* Build configuration list for PBXNativeTarget "Fusuma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40607FA92E2C791D7A3FA66F8D50A63B /* Debug */,
+				75B46EAA6283FFCC5C4586D90D5B4644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A28629F5C4F4B72465824A98981E1D99 /* Build configuration list for PBXNativeTarget "Pods-CustomCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12A9E50A0BEC96DAB13E6F562419A746 /* Debug */,
+				EDB1DB0F43161CCAE4346B4F20CB6D91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCEA460EC64450E8030473B29C283047 /* Build configuration list for PBXNativeTarget "Pods-CustomCameraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E94273E3C5FCC081248159094B13A0B4 /* Debug */,
+				881B378F3229217FCCEA1691D49AD304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C24693D24506F6FEBA50394839447F5C /* Build configuration list for PBXNativeTarget "Pods-CustomCameraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAEE0BDAF3102380D30EDA5DEA63AE5D /* Debug */,
+				3669481C4E1CA99738D6D3D906F63C44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
