@@ -128,7 +128,7 @@ class ViewController: BBDarkThemedViewController {
         
         if self.isRecording {
             
-            let outputPath = "\(NSTemporaryDirectory())output.mov"
+            let outputPath = "\(NSTemporaryDirectory())originalVideo.mov"
             let outputURL = URL(fileURLWithPath: outputPath)
             
             let fileManager = FileManager.default
@@ -228,11 +228,11 @@ class ViewController: BBDarkThemedViewController {
     func manageCroppingToSquare(filePath: URL , completion: @escaping (_ outputURL : URL?) -> ()) {
         
         // output file
-        let docFolder = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last
-        let outputPath = (docFolder! as NSString).appendingPathComponent("squareOutput.mov")
-        if FileManager.default.fileExists(atPath: outputPath) {
+        let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
+        let outputPath = documentsURL?.appendingPathComponent("squareVideo.mov")
+        if FileManager.default.fileExists(atPath: (outputPath?.path)!) {
             do {
-               try FileManager.default.removeItem(atPath: outputPath)
+               try FileManager.default.removeItem(atPath: (outputPath?.path)!)
             }
             catch {
                 print ("Error deleting file")
@@ -246,47 +246,40 @@ class ViewController: BBDarkThemedViewController {
         composition.addMutableTrack(withMediaType: AVMediaTypeVideo, preferredTrackID: kCMPersistentTrackID_Invalid)
         
         //input clip
-        
         let clipVideoTrack = asset.tracks(withMediaType: AVMediaTypeVideo)[0]
         
         //make it square
+        let videoComposition = AVMutableVideoComposition()
+        videoComposition.renderSize = CGSize(width: CGFloat(clipVideoTrack.naturalSize.height), height: CGFloat(clipVideoTrack.naturalSize.height))
+        videoComposition.frameDuration = CMTimeMake(1, 30)
+        let instruction = AVMutableVideoCompositionInstruction()
+        instruction.timeRange = CMTimeRangeMake(kCMTimeZero, CMTimeMakeWithSeconds(60, 30))
         
-        let videoComposition = AVMutableVideoComposition.init()
-        videoComposition.renderSize = CGSize(width: clipVideoTrack.naturalSize.height, height: clipVideoTrack.naturalSize.height)
-        videoComposition.frameDuration = CMTime(seconds: 1, preferredTimescale: 30)
-        
-        let instruction = AVMutableVideoCompositionInstruction.init()
-        instruction.timeRange = CMTimeRange(start: kCMTimeZero, duration: CMTime(seconds: 60, preferredTimescale: 30))
-
-//      rotate to potrait
-        
-        let transformer = AVMutableVideoCompositionLayerInstruction.init(assetTrack: clipVideoTrack)
+        //rotate to potrait
+        let transformer = AVMutableVideoCompositionLayerInstruction(assetTrack: clipVideoTrack)
         let t1 = CGAffineTransform(translationX: clipVideoTrack.naturalSize.height, y: -(clipVideoTrack.naturalSize.width - clipVideoTrack.naturalSize.height) / 2)
-        let t2 = t1.rotated(by: .pi/2)
-        let finalTransform = t2
+        let t2: CGAffineTransform = t1.rotated(by: .pi/2)
+        let finalTransform: CGAffineTransform = t2
         transformer.setTransform(finalTransform, at: kCMTimeZero)
-        instruction.layerInstructions = Array.init(arrayLiteral: transformer)
-        videoComposition.instructions = Array.init(arrayLiteral: instruction)
+        instruction.layerInstructions = [transformer]
+        videoComposition.instructions = [instruction]
         
         //exporter 
-        let exporter = AVAssetExportSession.init(asset: asset, presetName: AVAssetExportPresetHighestQuality)
+        let exporter = AVAssetExportSession.init(asset: asset, presetName: AVAssetExportPresetMediumQuality)
         exporter?.outputFileType = AVFileTypeQuickTimeMovie
-        exporter?.outputURL = URL(fileURLWithPath: outputPath)
-        
+        exporter?.outputURL = outputPath
         exporter?.videoComposition = videoComposition
         
         exporter?.exportAsynchronously() { handler -> Void in
             if exporter?.status == .completed {
                 print("Export complete")
                 DispatchQueue.main.async(execute: {
-                    print(outputPath)
-                    completion(URL(string: outputPath)!)
+                    completion(outputPath)
                 })
                 return
             } else if exporter?.status == .failed {
                 print("Export failed - \(String(describing: exporter?.error))")
             }
-            
             completion(nil)
             return
         }

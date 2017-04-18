@@ -19,7 +19,7 @@ class VideoEditorViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        view.layoutIfNeeded()
+        videoPlayingView.layoutIfNeeded()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,9 +32,9 @@ class VideoEditorViewController: UIViewController {
         let player = AVPlayer(url: assetsURL!)
         let playerLayer = AVPlayerLayer(player: player)
         playerLayer.backgroundColor = UIColor.brown.cgColor
-        playerLayer.frame = videoPlayingView.frame
+        playerLayer.frame = videoPlayingView.bounds
         videoPlayingView.layer.addSublayer(playerLayer)
         player.play()
-        view.layoutIfNeeded()
+        videoPlayingView.layoutIfNeeded()
     }
 }
